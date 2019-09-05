@@ -31,8 +31,7 @@ class MainFragment : DaggerFragment() {
     private var param2: String? = null
     private var listener: OnFragmentInteractionListener? = null
 
-    @Inject
-    lateinit var pagerAdapter :MyPagerAdapter
+    val pagerAdapter :MyPagerAdapter by lazy { MyPagerAdapter(childFragmentManager,lifecycle) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
