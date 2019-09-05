@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MainFragment">
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="com.example.viewpager2withdagger2.MainFragment"
+        android:label="MainFragment">
+        <action
+            android:id="@+id/action_mainFragment_to_ticketDetail"
+            app:destination="@id/endFragment">
+
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/endFragment"
+        android:name="com.example.viewpager2withdagger2.EndFragment"
+        android:label="MainFragment">
+
+    </fragment>
+</navigation>
